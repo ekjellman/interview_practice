@@ -43,3 +43,6 @@ for test in tests:
 ###
 
 # Line 26: Had > instead of <=
+# Did not consider bitvector solution (keep bitvector of oddness per letter)
+# Did not consider stopping early if odd_counts == 2
+
