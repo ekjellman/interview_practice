@@ -34,4 +34,4 @@ for a, b, expected in tests:
 # Mistakes / Bugs / Misses
 ###
 
-# None
+# Did not check that a and b were the same length
