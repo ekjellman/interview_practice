@@ -102,3 +102,6 @@ print is_palindrome(test_list)  # False
 # Mistakes / Bugs / Misses
 ###
 # Missed case at 54 for reverse
+# Did not think about the stack approach
+# Did not think about the fast/slow runner approach for getting half the list
+# 
