@@ -1,0 +1,136 @@
+Just blowing through the answers to these. I know most of them already.
+
+Problem 1:
+Label the bottles 1-20
+put n of pill from bottle n on the scale.
+The weight would be 210 grams if they were all 1.0 (sum from 1-20)
+The weight will actually be 210 + (m / 10) grams
+bottle m is the "culprit"
+
+Problem 2:
+Game 1: Chance of winning is p.
+Game 2: Chance of making 2 shots is 3*(p**2 * 1-p) + p**3
+These are equal when p = .5 (after doing a bunch of math)
+Game 2 is better at more than .5, Game 1 is better at less.
+Except: at p == 0 or p == 1, it's equivalent.
+
+Problem 3:
+No.
+Consider the colors of squares on a chess board
+Any domino laid down covers one white and one black square
+The squares we cut off are both white, so we have 30 white and 32 black
+We cannot lay down 31 dominos on 30 white squares
+
+Problem 4:
+There are 8 possibilities for the ways the ants walk.
+There are 2 that don't result in collision.
+So the probability of no collision is 1/4.
+More generally, the probability is 1 / 2**(n-1)  (2 / 2**n)
+(the probability of collision is 1 - that)
+
+Problem 5:
+Pour the 3 into the 5
+Pour another 2 of the 3 into the 5, leaving 1 left in the 3
+Pour out the 5
+Pour the 1 into the 5
+Pour another 3 into the 5
+You now have 4 in the 5
+
+Problem 6:
+No one ever leaves: Who would follow a strange order from a visitor?
+But more in spirit with the problem:
+Assume there is one blue eyed person. That person knows that no one else on the
+island has blue eyes, so they would leave on the first flight.
+Now assume there are two. That person sees one other blue eyed person, but knows
+they didn't leave on the first night. So they must see another blue eyed person.
+But once no one leaves on the first night, they both know that there is one
+other person, so they both leave on the second night.
+Similarly, if there are n blue eyed persons, they leave on the nth night.
+If they're all sheep.
+
+Problem 7:
+The gender ratio of the new generation, assuming they can have infinite children
+if they continue having boys, is still 1:1
+The proclamation does not change the odds of having a boy or a girl for each
+pregnancy, just when they stop.
+Or, you'll have the following outcomes:
+G with p = .5
+BG with p = .25
+BBG with p = .125
+BBBG with p = .0625
+etc
+If you sum up the number of girls, you get .5G + .25G + .125G + ... = 1
+If you sum up boys, you get 1/4 + 2/8 + 3/16 + 4/32 + ...
+Which is 1/2 + 1/4 + 1/8 + ... = 1 as well:
+1/4 + 1/8 + 1/16 + 1/32 + ...
+      1/8 + 1/16 + 1/32 + 1/64 + ...
+            1/16 + 1/32 + 1/64 + 1/128 + ...
+... etc ...
+--------------------------------------------
+1/4 + 2/8 + 3/16 + 4/32 + ...
+
+Simulation is as follows:
+>>> import random
+>>> def trial():
+...   boy_count = 0
+...   while random.random() > .5:
+...     boy_count += 1
+...   return boy_count
+...
+>>> trials = [trial() for _ in xrange(100000)]
+>>> print sum(trials)
+99419
+>>> trials = [trial() for _ in xrange(100000)]
+>>> print sum(trials)
+100484
+>>> trials = [trial() for _ in xrange(100000)]
+>>> print sum(trials)
+100382
+
+Seems close to the predicted values.
+
+Problem 8:
+You'd like to binary search, but in the worst case, you get a break on floor 50,
+and then you have to test those one at a time.
+Instead, you'd like to test floors such that the worst case leads to the same
+number of tests as the best case.
+To do this, we test by one less floor each time. To figure out the starting
+floor, we can use the triangle numbers.
+14 + 13 + 12 + ... + 1 = 105
+So we'll start with the 14th floor, then the 27th, then the 39th, etc.
+Each time, if the egg breaks, we have 14-n floors under to test, where n is the
+number of trials we've already done.
+
+Problem 9:
+10 lockers are open.
+We toggle a locker n when i is a factor of n.
+Non-square numbers have an even number of factors of n. We know this because
+we can pair the factors. For example, if n is 60, we have pairs like this:
+(1 60) (2 30) (3 20) (4 15) (5 12) (6 10)
+We can do the same with a square number, but we'll have one equal pair
+n = 36:
+(1 36) (2 18) (3 12) (4 9) (6 6)
+So square numbers have an odd number of factors, so they remain open.
+There are 10 square numbers less than or equal to 100, so 10 lockers remain open
+
+Problem 10:
+Get 1000 new bottles of soda.
+Ok, more seriously:
+For each bottle n of soda, convert it to a binary number.
+The ith bit of that number indicates whether we will put a drop on strip i
+(we need 10 strips, since 2**10 > 1000)
+Put strips on the bottles as indicated
+Then treat the strips as a binary number, poisoned = 1, not poisoned = 0
+That will give you the bottle number that is poisoned.
+
+I did not simulate the approach, since any simulation I could think to write
+would amount to setting then reading a binary number.
+
+
+
+###
+# Mistakes / Bugs / Misses
+###
+Problem 4: I calculated the probability of non-collision, not the probability
+           of collision
+
