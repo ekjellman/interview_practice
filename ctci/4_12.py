@@ -61,4 +61,3 @@ print paths_with_sum(a.right, 0), "9"
 # REDO
 # It seems like I had the approach right, but there was a bug I couldn't find in
 # time.
-# START HERE
