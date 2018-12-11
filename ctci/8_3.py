@@ -47,3 +47,5 @@ print find_magic_index([-2, -1, 0, 1, 2, 3, 40, 41, 42, 43]), "None"
 # It took me a while to work out the end condition at line 21, so I should
 # make a card for that.
 # Probably "a" should be "array", or a better Pythonic name.
+
+# Oops, actually, didn't mention the duplicates follow up.
