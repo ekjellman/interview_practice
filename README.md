@@ -1,2 +1,2 @@
 # interview_practice
-Code for interview practice problems
+Code for interview practice problems.
