@@ -30,3 +30,4 @@ print "[9]", diving_board(3, 3, 3)
 ###
 # Did not think about the short == long case. My original code broke on that,
 # untill I added line 19
+# print "[9, 11, 13, 15]", diving_board(3, 5, 3)
