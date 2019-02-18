@@ -12,7 +12,7 @@
 ###
 # Questions:
 # Can a and b be empty? (Assuming no)
-# Case, etc (assume cast sensitive)
+# Case, etc (assume case sensitive)
 # Extensible?
 
 def matches(pattern, value, pattern_map=None):
@@ -40,7 +40,7 @@ print matches("aabab", "catcatgocatgo")
 print matches("bbaba", "catcatgocatgo")
 print matches("a", "catcatgocatgo")
 print matches("ab", "catcatgocatgo")
-print matches("a", "catcatgocatgo")
+print matches("b", "catcatgocatgo")
 print "All false"
 print matches("aaa", "catcatgocatgo")
 print matches("aaaa", "catcatcat")

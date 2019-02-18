@@ -35,4 +35,4 @@ print lcs((-1, 2, 2, 2)), "6"
 ###
 # Mistakes / Bugs / Misses
 ###
-# none
+# Use max at 22-23
