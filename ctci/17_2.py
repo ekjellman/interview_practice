@@ -34,5 +34,3 @@ for card_tuple in counts:
 # Mistakes / Bugs / Misses
 ###
 # Seems good
-# TODO: Make a card about finding the min and max value in a hashtable
-#       I would have liked to do that here

@@ -62,13 +62,13 @@ print_similarities(documents)
 ###
 # Mistakes / Bugs / Misses
 ###
-# Wasn't sure about set.extend(). TODO: Make card
+# Wasn't sure about set.extend().
 # Line 40 was for word in document:
 # Line 40 had append not add
 # Line 44 had extend instead of &=
-# Line 44 had &= instead of |=  TODO: Make card
+# Line 44 had &= instead of |=
 # Line 52 had print instead of return
-# Line 52 had no float. TODO: make card
+# Line 52 had no float.
 # Did not think of approach of making an intersection count for (doca, docb) by
 #   iterating through pairs of words in the word_index
 

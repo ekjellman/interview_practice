@@ -59,5 +59,5 @@ print word_distance(["a", "c", "a", "b", "a", "c", "b"], "b", "c"), "1"
 # Mistakes / Bugs / Misses
 ###
 # TODO: Make a card for unicode stuff, in case anyone actually says yes
-# TODO: Wasn't sure about enumerate order, make card
+# Wasn't sure about enumerate order,
 # Didn't ask about word 1 or word 2 being first.

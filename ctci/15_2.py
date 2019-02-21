@@ -21,7 +21,5 @@
 ###
 # Mistakes / Bugs / Misses
 ###
-# TODO: Make a card on context switches
-# http://www.linfo.org/context_switch.html
-# Her solution (TODO study further) is basically to have two processes and
+# Her solution is basically to have two processes and
 # send a token back and forth between them measuring the time.

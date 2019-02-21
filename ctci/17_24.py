@@ -58,5 +58,5 @@ print best_submatrix(matrix)
 # Only coded n**6 solution, and only thought of n**5 solution.
 # At least I got some code down. >_<
 # Did not think of n**4 solution. Make a card for the union problem, given you
-# have all the values from (0, 0) to (x, y) computed (TODO)
-# Did not think of n**3 solution (TODO Make card)
+# have all the values from (0, 0) to (x, y) computed
+# Did not think of n**3 solution

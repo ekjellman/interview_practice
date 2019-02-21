@@ -63,4 +63,3 @@ print kth_multiple(100), kth_multiple_brute(100)
 ###
 # Mistakes / Bugs / Misses
 ###
-# TODO: try to really understand why the queues here work.

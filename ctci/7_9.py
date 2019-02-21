@@ -58,6 +58,4 @@ print a.list_copy()
 # Got insert wrong. Also did not remember if you could insert at the end using
 #   len(list)
 # Also got order of insert arguments wrong
-# REDO
-# Before redoing: Make some iterators and cards for that and the insert question
 

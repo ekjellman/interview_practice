@@ -71,4 +71,4 @@ print family.encoding(mapping)
 ###
 # Forgot self in lines 35 and 38
 # Forgot str at lines 34 and 53
-# (Puzzler): Join lines 33-34 and 52-54 (Make a card)
+# (Puzzler): Join lines 33-34 and 52-54

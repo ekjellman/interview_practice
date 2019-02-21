@@ -26,7 +26,7 @@ def get_word_set(dict_file="/usr/share/dict/words"):
 
 def respace(s, word_set, cache=None):
   if not s: return (0, [])
-  if cache is None:
+  if not cache:
     cache = {}
   if s in cache:
     return cache[s]
@@ -52,5 +52,5 @@ print respace("tzisbeatest", word_set)
 # Mistakes / Bugs / Misses
 ###
 # Forgot colon at line 22
-# Had if not cache at line 29, which doesn't work. TODO: make card
+# Had if not cache at line 29, which doesn't work.
 # Forgot to ask what to do about multiple solutions

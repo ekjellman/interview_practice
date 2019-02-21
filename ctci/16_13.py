@@ -62,7 +62,6 @@ print bisect_squares(a, b), "(5, 5, 13, 13)"
 # Forgot self at line 35
 # Forgot str() at line 35
 # Forgot to put the strings in a tuple at line 35
-# TODO: Make a card for line 35, it would be a good error finding card
 # Didn't think about the option of "line starts at the edge of the squares"
 # It does make the problem a little more interesting, but not enough that I
 # want to redo it.

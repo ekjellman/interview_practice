@@ -52,7 +52,7 @@ print matches("aaaa", "catcatcatcatcat")
 # Mistakes / Bugs / Misses
 ###
 # Off by one error at 29. only went to len(value). I need len(value) + 1 to
-#   get the whole string (TODO: Make card)
+#   get the whole string
 # There are probably some improvements if all letters in pattern are known
 # Thought about but did not implement the length optimization for the a and b
 #   only case, since I made it more generalized than that.

@@ -32,4 +32,4 @@ print group_anagrams(["ace", "cab", "eca", "bac", "eac", "abc", "", "test"])
 ###
 # I got cute with my one-line solution, so I didn't think about bucketing by
 # anagram. That would have been a better solution. I'm not going to fail this,
-# but I want to make a card for it. TODO
+# but I want to make a card for it.

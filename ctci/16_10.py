@@ -47,7 +47,7 @@ print "1917-1920", highest_pop_year(people)
 ###
 # Mistakes / Bugs / Misses
 ###
-# There is a fancier way to do that max. Make a card for it.
+# There is a fancier way to do that max.
 # Didn't think about "no people" edge case until writing tests.
 # had "return best year" for line 40
 # I didn't think deeply about whether a n log n solution is better. For most

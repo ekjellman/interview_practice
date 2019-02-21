@@ -64,7 +64,7 @@ print masseuse_dp([60]), 60
 ###
 # Mistakes / Bugs / Misses
 ###
-# Wasn't sure if entries[2:] would work for a list of 1 entry. TODO: card
+# Wasn't sure if entries[2:] would work for a list of 1 entry.
 # Her solution of making the DP table two longer is interesting, and I should
 # keep it in mind.
-# Did not consider solution that didn't keep the whole table. TODO: card
+# Did not consider solution that didn't keep the whole table.

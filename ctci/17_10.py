@@ -52,4 +52,4 @@ print majority([1, 2, 3, 4, 5, 5, 5, 5, 5]), "5"
 ###
 # Mistakes / Bugs / Misses
 ###
-# TODO: There must be a better way of counting than 36-37. Make card
+# There is a better way of counting than 36-37, use count()

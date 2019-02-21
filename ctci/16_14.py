@@ -65,8 +65,6 @@ print most_lines(points)
 # Mistakes / Bugs / Misses
 ###
 # Not sure how round function works
-# TODO: There's a way to do the defaultdict thing without defaultdict. Make a
-#       card for it
 # Had x.diff instead of x_diff at line 32
 # forgot () for get_tuple at 46, 47
 # Should have had epsilon configurable

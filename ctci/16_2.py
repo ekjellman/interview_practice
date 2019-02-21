@@ -43,5 +43,3 @@ class WordFrequencies(object):
 ###
 # Thought about but did not ask what to do if the word is not in the book.
 # I guess that's slightly better. >_<
-
-

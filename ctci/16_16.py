@@ -11,7 +11,7 @@
 ###
 # Length of the list?
 # What if the entire list is sorted?
-# 
+#
 
 def subrange(numbers):
   for i in xrange(len(numbers) - 1):
@@ -44,5 +44,4 @@ print subrange((1, 2, 4, 7, 10, 11, 7, 12, 6, 7, 16, 18, 19)), (3, 9)
 # Mistakes / Bugs / Misses
 ###
 # Forgot closing parens on 25, 26
-# Used len(numbers) instead of len(numbers) - 1 at 22, 32 (TODO: make card)
-# TODO: Study solution here. Didn't think of shrinking left and right
+# Used len(numbers) instead of len(numbers) - 1 at 22, 32

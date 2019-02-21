@@ -21,4 +21,4 @@
 ###
 # The idea I was missing is that if you had two synchronized methods, two
 # threads could not call different synchronized methods because synchronized
-# essentially puts a lock on the object. (TODO make card)
+# essentially puts a lock on the object.

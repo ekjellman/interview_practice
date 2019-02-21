@@ -41,4 +41,3 @@ print sum_swap([1, 2, 3, 4, 5], [1, 2, 3, 4, 5, 6]), "(3, 6) or diff of 3"
 # Mistakes / Bugs / Misses
 ###
 # Didn't think about just iterating through sorted lists
-

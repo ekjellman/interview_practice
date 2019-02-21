@@ -53,4 +53,3 @@ print tree.right.value
 # print_tree also did not check if the node existed
 # print_tree also did not actually indent.
 # Line 33 had BST(root_index) instead of BST(array[root_index])
-# REDO

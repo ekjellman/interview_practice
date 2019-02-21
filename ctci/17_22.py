@@ -74,8 +74,7 @@ print word_chain(word_set, "zzzzz", "aaaaa")
 ###
 # Forgot a loop in get_word_set()
 # Forgot to add a to visited at 35
-# Had reversed(path), which returns a listiterator. Find a better way, and make
-# a card. (list.reverse()?)
+# Had reversed(path), which returns a listiterator.
 # Original output had a None at the beginning. Fixed. (Because it appended the
 # last None, and then reversed)
 # Did not consider bidirectional search.
@@ -86,4 +85,3 @@ print word_chain(word_set, "zzzzz", "aaaaa")
 # step is O(l), and it's not clear to me it's better.
 # Of course, if you're calling this many times and can just hold to the cache
 # it's a good idea, so I should remember it.
-# TODO: Implement Bidi using this problem

@@ -40,4 +40,5 @@ def find_rotated(items, element):
 ###
 # Need to practice writing binary search. >_< I also spent a lot of time
 # grappling with how this is a modification of binary search.
-# STUDY THIS PROBLEM (TODO)
+# Hey, how about writing functions. One to find the split point, one to search
+# afterwards (which could be a standard binary search.

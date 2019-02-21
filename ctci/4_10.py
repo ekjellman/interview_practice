@@ -70,6 +70,5 @@ print "True", is_subtree(a, b)
 # Mistakes / Bugs / Misses
 ###
 # Lines 29-30: Used is_same() instead of is_subtree()
-# Did not consider comparing traversals. Make a card
 # Amusingly, my is_same() method is exactly her matchTree() method.
 #   Maybe it's ok.

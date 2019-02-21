@@ -54,7 +54,7 @@ print longest_substring("1aa11a111aa1111a1a"), "aa11a111aa"
 ###
 # Mistakes / Bugs / Misses
 ###
-# Didn't remember how to get a list of numbers out of string module. TODO
+# Didn't remember how to get a list of numbers out of string module.
 # The best solution is to keep a hashtable with the key
 # (letter_count - number_count) and the value is the first time that difference
 # appeared. As you go through the array, when you see a diffference, you can
@@ -63,4 +63,3 @@ print longest_substring("1aa11a111aa1111a1a"), "aa11a111aa"
 # For example, if your array starts with "aaaa", that's a difference of 4. Later
 # if you see a difference of 4 again, it means the number and letters counts
 # from this beginning to there are equal.
-# TODO make a card.

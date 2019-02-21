@@ -62,4 +62,3 @@ print find_ponds(matrix)
 ###
 # Forgot to check if the square we're checking is a pond or in the matrix at 40
 # At line 31, had current_pond = set((y, x))
-# I still don't understand why this doesn't work. TODO: Card

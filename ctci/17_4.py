@@ -19,7 +19,7 @@
 # Doing the sum thing is O(n log n) now (since it takes log n time to read the
 #  "average" number on the list.
 # Can we do other stuff like store candidate indices in a list? (Assuming no)
-# 
+#
 
 def fetch_bit(number, bit):
   return number & (1 << bit)
@@ -40,7 +40,3 @@ def fetch_bit(number, bit):
 # should have
 # -- First, separated it out into a function, and wrote the rest of the code
 # -- Then, taken just an absolutely blunt approach to it, and refined
-
-# Instead, I wasted 10-15 minutes thinking about the formula, and got nothing
-# written.  TODO: Make card
-# TODO: Study solution
