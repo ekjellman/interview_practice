@@ -19,7 +19,7 @@ import collections
 
 class WordFinder(object):
   def __init__(self, word_list):
-    self.table = self.make_table(word_list) 
+    self.table = self.make_table(word_list)
 
   def make_table(self, words):
              #abcdefghijklmnopqrstuvwxyz
@@ -42,6 +42,7 @@ with open("/usr/share/dict/words", "r") as file_in:
 
 wf = WordFinder(words)
 print wf.lookup(8733)
+print wf.lookup(426287437)
 
 # Time: 11 minutes
 
