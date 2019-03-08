@@ -12,6 +12,14 @@ class ListNode(object):
       current = current.next_node
     return values
 
+  def length(self):
+    result = 0
+    current = self
+    while current:
+      result += 1
+      current = current.next_node
+    return result
+
   def find(self, value):
     current = self
     while current:
