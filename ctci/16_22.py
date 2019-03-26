@@ -50,6 +50,7 @@ class Board(object):
       for x in xrange(self.min_coord, self.max_coord + 1):
         print "O."[self.get(x, y)],
       print
+    print self.min_coord, self.max_coord
 
 def print_k_moves(k):
   DIRS = [(0, 1), (1, 0), (0, -1), (-1, 0)]
